@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Observable, Subject,of,from, map } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -42,7 +42,10 @@ export class AppComponent implements OnInit {
       complete: () => console.log('Completed'),
     });
 
- 
+    // -----------------------Operators------------------------
+    of(5,6,7,9).subscribe((val)=>console.log(val));
+    of(5,6,7,9).pipe(map((val)=>val*2)).subscribe((val)=>console.log(val));
+    from([5,6,7,9]).subscribe((val)=>console.log(val))
   }
   ngOnInit() {
    this.obs.subscribe((val: any) => console.log(val));
