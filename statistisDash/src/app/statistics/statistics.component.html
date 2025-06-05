@@ -1,9 +1,9 @@
 <div class="dashboard-container">
   <div class="card" *ngFor="let item of [
       { label: 'Total Learners', count: stats.totalUsers, color: 'blue' },
-      { label: 'Assessments Completed', count: stats.assessments, color: 'green' },
-      { label: 'Microlearning Completed', count: stats.microlearning, color: 'orange' },
-      { label: 'Courses Completed', count: stats.courses, color: 'purple' }
+      { label: 'Number of Learners Completed Pre-Assessments', count: stats.assessments, color: 'green' },
+      { label: 'Number of Learners Completed Micro-learning', count: stats.microlearning, color: 'orange' },
+      { label: 'Number of Learners Completed Courses', count: stats.courses, color: 'purple' }
     ]">
     <h3>{{ item.label }}</h3>
     <p class="count" [ngStyle]="{ color: item.color }">{{ item.count }}</p>
@@ -11,9 +11,10 @@
 </div>
 
 <div class="tab-section">
+  <h1>Lists</h1>
   <div class="tabs">
-    <button (click)="selectedTab = 'assessment'" [class.active]="selectedTab === 'assessment'">Assessment Users</button>
-    <button (click)="selectedTab = 'microlearning'" [class.active]="selectedTab === 'microlearning'">Microlearning Users</button>
+    <button (click)="selectedTab = 'assessment'" [class.active]="selectedTab === 'assessment'">Assessment Completers</button>
+    <button (click)="selectedTab = 'microlearning'" [class.active]="selectedTab === 'microlearning'">Microlearning Completers</button>
     <button (click)="selectedTab = 'course'" [class.active]="selectedTab === 'course'">Course Completers</button>
   </div>
 
