@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StatisticsComponent } from './statistics.component';
+import { MychartComponent } from './mychart.component';
 
-describe('StatisticsComponent', () => {
-  let component: StatisticsComponent;
-  let fixture: ComponentFixture<StatisticsComponent>;
+describe('MychartComponent', () => {
+  let component: MychartComponent;
+  let fixture: ComponentFixture<MychartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [StatisticsComponent]
+      imports: [MychartComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StatisticsComponent);
+    fixture = TestBed.createComponent(MychartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
