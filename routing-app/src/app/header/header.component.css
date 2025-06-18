@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  background-color: black;
+  color: white;
+}
+
+header .logo {
+  font-size: 48px;
+}
+
+.logo span {
+  color: blanchedalmond;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  color: blanchedalmond;
+  text-decoration: underline;
+}
