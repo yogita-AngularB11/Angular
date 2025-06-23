@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Tut13Component } from './tut13/tut13.component';
+import { Tut14Component } from './tut14/tut14.component';
 
 @Component({
   selector: 'app-root',
-  imports: [Tut13Component],
+  imports: [Tut13Component,Tut14Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
