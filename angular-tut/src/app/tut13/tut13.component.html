@@ -1,5 +1,10 @@
 <h1>Get and Set Input Field Values</h1>
-<input type="text" (input)="getName($event)" placeholder="Enter Username">
+<h2>UserName is::{{name}}</h2>
+<h2 style="color: brown;">Username is :: {{displayName}}</h2>
+<input type="text" value="{{name}}" (input)="getName($event)" placeholder="Enter Username">
 <br>
 <br>
-<button>Get Value</button>
+<button (click)="showName()">Get Value</button>
+<br>
+<br>
+<button (click)="setName()">Set Name</button>
