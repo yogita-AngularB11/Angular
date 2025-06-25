@@ -1,0 +1,28 @@
+<h1>Tutorial 15</h1>
+<h2>If Else | Control Flow</h2>
+
+<!-- @if(x<10){
+    <div style="width: 200px; height: 200px; background-color: green;"></div>
+} -->
+<div style="display: flex;justify-content: center; margin: 10px;">
+    @if(display){
+    <div style="width: 200px; height: 200px; background-color: pink;"></div>
+    }
+</div>
+
+<div style="display: flex; justify-content: space-around;">
+    <button (click)="hide()">Hide Div</button>
+    <button (click)="show()">Show Div</button>
+    <button (click)="toggle()">Toggle Div</button>
+</div>
+<hr>
+<div style="display: flex;justify-content: center; flex-direction: column; margin: 10px;">
+    @if(toggleDiv){
+    <div style="width: 200px; height: 200px; background-color: pink;"></div>
+    }
+    @else {
+    <div style="width: 200px; height: 200px; background-color:skyblue;"></div>
+    }
+    
+</div>
+<button style="margin: 10px;"  (click)="toggleTwo()">{{toggleDiv?'Show Blue Div':'Show Pink Div'}}</button>
